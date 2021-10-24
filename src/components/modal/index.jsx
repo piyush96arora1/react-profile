@@ -11,12 +11,11 @@ const StyledModal = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-display: flex;
-justify-content: center;
-align-items: center;
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-border-radius: 16px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
 `;
 
 const Modal = ({ isOpen, children }) => {

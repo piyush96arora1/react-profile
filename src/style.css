@@ -45,15 +45,15 @@ body {
   outline: none;
   box-shadow: none;
   transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-  background: #FAFAFA;
-border: 1px solid #D5D5D5;
+  background: #fafafa;
+  border: 1px solid #d5d5d5;
 }
 
 .input-container input:focus {
   box-shadow: 0 0 0 2px #79b1ff;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 

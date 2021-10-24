@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function TextInput({
-  type = 'text',
-  label = 'Name',
+  type = "text",
+  label = "Name",
   value,
   handleChange,
   name,
@@ -17,7 +17,7 @@ function TextInput({
         value={value}
         onChange={handleChange}
       />
-      <label className={value && 'filled'} htmlFor={name}>
+      <label className={value && "filled"} htmlFor={name}>
         {label}
       </label>
     </div>

@@ -86,11 +86,7 @@ const Header = () => {
           );
         })}
       </div>
-      <img
-        src={Resources.assets.logout}
-        className="logout"
-        alt="logout"
-      />
+      <img src={Resources.assets.logout} className="logout" alt="logout" />
     </StyledHeader>
   );
 };

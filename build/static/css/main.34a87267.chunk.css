@@ -1,2 +1,77 @@
-body,html{padding:0;margin:0;font-family:Almarai;font-size:20px;background:#e5e5e5}.input-container{position:relative;display:flex;flex-direction:column}.input-container:focus-within label{-webkit-transform:translateY(12px) scale(.8);transform:translateY(12px) scale(.8);color:#0a53e4}.input-container .filled{-webkit-transform:translateY(12px) scale(.8);transform:translateY(12px) scale(.8)}.input-container label{position:absolute;pointer-events:none;-webkit-transform:translateY(23px) scale(1);transform:translateY(23px) scale(1);-webkit-transform-origin:top left;transform-origin:top left;color:#6f81a5;left:16px}.input-container input,.input-container label{transition:.2s cubic-bezier(0,0,.2,1) 0ms;font-size:16px;line-height:1}.input-container input{height:64px;border-radius:4px;border:none;padding:24px 16px 4px;outline:none;box-shadow:none}.input-container input:focus{box-shadow:0 0 0 2px #79b1ff}.flex{display:flex}.align-center{align-items:center}.center,.justify-center{justify-content:center}.center{align-items:center}.column{flex-direction:column}.row{flex-direction:row}.form-item{margin-top:1.6rem}@media only screen and (max-width:767px){.mdisplayNone{display:none!important}}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: Almarai;
+  font-size: 20px;
+  background: #e5e5e5;
+}
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input-container:focus-within label {
+  -webkit-transform: translateY(12px) scale(0.8);
+  transform: translateY(12px) scale(0.8);
+  color: #0a53e4;
+}
+.input-container .filled {
+  -webkit-transform: translateY(12px) scale(0.8);
+  transform: translateY(12px) scale(0.8);
+}
+.input-container label {
+  position: absolute;
+  pointer-events: none;
+  -webkit-transform: translateY(23px) scale(1);
+  transform: translateY(23px) scale(1);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  color: #6f81a5;
+  left: 16px;
+}
+.input-container input,
+.input-container label {
+  transition: 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
+  font-size: 16px;
+  line-height: 1;
+}
+.input-container input {
+  height: 64px;
+  border-radius: 4px;
+  border: none;
+  padding: 24px 16px 4px;
+  outline: none;
+  box-shadow: none;
+}
+.input-container input:focus {
+  box-shadow: 0 0 0 2px #79b1ff;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.center,
+.justify-center {
+  justify-content: center;
+}
+.center {
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.form-item {
+  margin-top: 1.6rem;
+}
+@media only screen and (max-width: 767px) {
+  .mdisplayNone {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=main.34a87267.chunk.css.map */

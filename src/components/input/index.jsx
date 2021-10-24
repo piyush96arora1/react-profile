@@ -9,7 +9,7 @@ function TextInput({
   id,
 }) {
   return (
-    <div className="input-container">
+    <div className="input-container form-item">
       <input
         id={id}
         name={name}

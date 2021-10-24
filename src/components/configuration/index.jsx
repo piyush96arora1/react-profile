@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Resources from "../../resources";
 import { configuration } from "../../utils/data";
 import styled from "styled-components";
+import Modal from "../modal";
+import ThankYouModal from "../modal/thankYou";
 const StyledWrapper = styled.div`
   padding: 64px 130px;
   img {
@@ -63,7 +65,10 @@ const StyledBox = styled.div`
 
 const Configuration = ({}) => {
   const [selectedConfig, setConfig] = useState(1);
+  const [modalOpen, setModal] = useState(false);
+
   return (
+      <React.Fragment>
     <StyledWrapper className="config">
       <div className="config__heading ">Select Configuration</div>
       {configuration.map((item) => {
@@ -92,7 +97,7 @@ const Configuration = ({}) => {
         );
       })}
       <div className="buttons flex row form-item">
-          <button type="button" className="btn btn-primary pointer">
+          <button onClick={()=>setModal(!modalOpen)} type="button" className="btn btn-primary pointer">
               <img src={Resources.assets.btn} alt="btn"/>
               Update Configutation
           </button>
@@ -101,7 +106,13 @@ const Configuration = ({}) => {
               Cancel
           </button>
       </div>
+     
+
     </StyledWrapper>
+    <Modal isOpen={modalOpen}>
+        <ThankYouModal/>
+      </Modal>
+    </React.Fragment>
   );
 };
 

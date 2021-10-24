@@ -10,6 +10,7 @@ const Resources = {
     triangle: '/assets/triangle.svg',
     colorCross: '/assets/colorCross.png',
     btn: '/assets/btn.png',
+    clap: '/assets/clap.png',
 
 
   },

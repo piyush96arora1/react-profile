@@ -11,6 +11,8 @@ const theme = {
   secondary: "#FC732F",
   white: "#fff",
   gray: "rgba(255, 255, 255, 0.75)",
+  gray2: "#dfdfdf",
+  orange: "#fc732f",
 };
 const StyledWrapper = styled.div`
   .flex {

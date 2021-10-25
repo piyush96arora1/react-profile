@@ -31,6 +31,31 @@ const StyledProfile = styled.div`
     font-weight: 800;
     color: #212121;
   }
+  @media only screen and (max-width: 1024px) {
+    .container__textMain{
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+    .container {
+      flex-direction: column;
+      padding: 64px 32px;
+      img{
+        width: 350px;
+      }
+    }
+    .container__inputsection {
+      margin-left: 0px;
+      
+    }
+    .container__secondInput {
+      flex-direction: column;
+  
+      div {
+        margin-right: 0px;
+      }
+     
+    }
+  }
 `;
 
 const Profile = ({}) => {

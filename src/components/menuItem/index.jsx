@@ -8,7 +8,6 @@ const StyledMenuItem = styled.div`
   border-bottom: none;
   padding-bottom: 8px;
   position: relative;
-
   .line {
     height: 7px;
     background: #86eaae;
@@ -21,6 +20,10 @@ const StyledMenuItem = styled.div`
     margin-bottom: 42px;
     padding-bottom: 16px;
     border-bottom: ${(props) => (props.selected ? `2px solid #86EAAE` : ``)};
+
+    .line{
+      display:none;
+    }
   }
 `;
 
@@ -28,7 +31,7 @@ const MenuItem = ({ value, selected, index }) => {
   return (
     <StyledMenuItem idx={index} selected={selected}>
       {value}
-      {selected && <div className="mdisplayNone line" />}
+      {selected && <div className="line" />}
     </StyledMenuItem>
   );
 };

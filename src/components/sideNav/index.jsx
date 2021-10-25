@@ -13,6 +13,8 @@ const StyledNav = styled.div`
   height: 100%;
   padding: 0px 32px;
   padding-top: 40px;
+  z-index: 999;
+
 `;
 
 const SideNav = ({ open }) => {

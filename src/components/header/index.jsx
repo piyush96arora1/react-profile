@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Resources from "../../resources";
-import { device, menuData } from "../../utils/data";
+import {  menuData } from "../../utils/data";
 import MenuItem from "../menuItem";
 import SideNav from "../sideNav";
 
@@ -16,46 +16,27 @@ const StyledHeader = styled.div`
   .logo {
     height: 26px;
   }
-//   .info{
-//     background: #FFF7F3;
-//     position: absolute;
-//     top: 0;
-//     width: 100%;
-//     left: 0;
-//     font-weight:700;
-//     font-size: 0.8rem;
-//     display: flex;
-//     align-items:center;
-//     padding-left: 32px;
-//     height: 56px;
-//     img{
-//       margin-right: 10px;
-//     }
-// }
-  }
 
-  @media only screen and ${device.mobileS} { 
-  width: 100%;
-    .menu { 
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .logout {
+    display: none;
+  }
+  @media only screen and (max-width: 1024px) {
+    .menu {
       display: none;
     }
-    .hamburger{
+    .hamburger {
       display: block;
     }
-  }
-  @media only screen and ${device.tablet} { 
-  width: auto;
-    .menu {
-      display: flex;
-    }
-    .hamburger{
-      display: none;
-    }
-    .logout{
+    .logout {
       display: none;
     }
   }
-  
 `;
 
 const Header = () => {
@@ -68,7 +49,12 @@ const Header = () => {
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
       </div> */}
       <img
-        onClick={() => setSideNav(!sideNav)}
+        onClick={() => 
+          {
+          document.body.style.overflow = sideNav?"auto":"hidden";
+          setSideNav(!sideNav)
+        }
+        }
         className="hamburger"
         src={Resources.assets[sideNav ? "cross" : "hamBurger"]}
         alt="menu"

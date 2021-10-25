@@ -31,17 +31,21 @@ const StyledWrapper = styled.div`
     }
   }
   .btn-primary {
-    background: #fc732f;
+    background: ${props=>props.theme.orange};
     color: #fff;
   }
   .btn-secondary {
-    color: #fc732f;
+    color: ${props=>props.theme.orange};
+  }
+  @media only screen and (max-width: 1024px) {
+    padding: 32px;
+
   }
 `;
 
 const StyledBox = styled.div`
-  border: ${(props) => (props.selected ? `1px solid #d5d5d5` : ``)};
-  background: ${(props) => (props.selected ? "#dfdfdf" : "#fff")};
+  border: ${(props) => (props.selected ? `1px solid ${props.theme.gray2}` : ``)};
+  background: ${(props) => (props.selected ? `${props.theme.gray2}` : "#fff")};
   width: 100%;
   .config__section__section {
     border-bottom: 1px solid #d5d5d5;
